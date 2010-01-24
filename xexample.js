@@ -6,6 +6,7 @@ xxml.parseXml(
 	function(o)
 	{
 		//sys.puts(sys.inspect(o));
-		sys.puts(o.children[0]['@stat']);
+		sys.puts(o.rsp['@stat']);
+		sys.puts(o.rsp.photos['@total']);
 	} 
 )	
