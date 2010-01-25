@@ -1,7 +1,7 @@
 var sys = require('sys'),
 	xxml = require('./lib/node-xxml');
 
-xxml.parseXml(
+xxml.parseXmlFile(
 	'flickr1.xml',
 	function(o)
 	{
@@ -10,4 +10,4 @@ xxml.parseXml(
 		sys.puts(o.rsp.photos._total);
 		sys.puts(o.rsp.photos.photo[0]._id);
 	} 
-)	
+)
