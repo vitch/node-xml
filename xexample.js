@@ -24,3 +24,15 @@ xxml.parseXmlString(
 		sys.puts(o.rsp.photos.photo[0]._id);
 	} 
 )
+
+xxml.parseXmlUrl(
+	'http://api.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=e51bde86388c03cfb405ffc85e5e7f66',
+	function(o)
+	{
+		sys.puts('xxml.parseXmlUrl');
+		//sys.puts(sys.inspect(o));
+		sys.puts(o.rsp._stat);
+		sys.puts(o.rsp.photos._total);
+		sys.puts(o.rsp.photos.photo[0]._id);
+	} 
+)
